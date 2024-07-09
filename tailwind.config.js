@@ -5,8 +5,8 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+  daisyui: {
+    themes: ["light", "dark", "cupcake","luxury","dim","pastel","business","night","retro","sunset"],
   },
   plugins: [
     daisyui,
