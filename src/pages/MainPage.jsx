@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const MainPage = () => {
   return (
@@ -11,10 +12,12 @@ const MainPage = () => {
             className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
-          <h2 className="card-title">Shoes!</h2>
+          <h2 className="card-title">Gun Text</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
+            <NavLink to="/gunText">
+              <button className="btn btn-primary">Go To Gun Text</button>
+            </NavLink>
           </div>
         </div>
       </div>

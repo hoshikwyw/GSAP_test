@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Path from './paths/Path'
+import { NavLink } from 'react-router-dom'
 
 const App = () => {
   const [theme, setTheme] = useState('sunset')
@@ -9,7 +10,7 @@ const App = () => {
     if (e.target.checked) {
       setTheme('sunset')
     } else {
-      setTheme('pastel')
+      setTheme('emerald')
     }
   }
   return (
@@ -17,7 +18,9 @@ const App = () => {
       <div className=' w-full shadow-xl mb-5'>
         <div className="navbar bg-base-100">
           <div className="flex-1">
-            <a className="btn btn-ghost text-xl">GSAP TEST</a>
+            <NavLink to="/">
+              <p className="btn btn-ghost text-xl">GSAP TEST</p>
+            </NavLink>
           </div>
           <div className="flex-none gap-2">
             <label className="grid cursor-pointer place-items-center">
