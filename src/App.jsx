@@ -14,7 +14,7 @@ const App = () => {
     }
   }
   return (
-    <div className=' min-w-screen min-h-screen flex justify-center items-center flex-col' data-theme={theme}>
+    <div className=' min-w-screen min-h-screen flex flex-col' data-theme={theme}>
       <div className=' w-full shadow-xl mb-5'>
         <div className="navbar bg-base-100">
           <div className="flex-1">
@@ -83,7 +83,10 @@ const App = () => {
           </div>
         </div>
       </div>
-      <Path />
+      <div className=' flex w-full h-full justify-center items-center'>
+        <Path />
+      </div>
+
     </div>
   )
 }
